@@ -22,3 +22,8 @@ footer {
       bottom: 0;
       width: 100%;
 }
+
+a:hover
+{
+  color: #000435;  
+}
