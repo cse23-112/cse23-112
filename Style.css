@@ -11,3 +11,14 @@ h3{
   color:white;
 }
 p{color:white;}
+
+footer {
+      background-color: #203354; 
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+}
