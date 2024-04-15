@@ -22,13 +22,13 @@ footer {
       bottom: 0;
       width: 100%;
 }
-a
-{
-  color: white; 
+a {
+  color: white;
   text-decoration: none; 
 }
 
-a:hover
-{
-  color: #000435;  
+a:hover {
+  color: #000435; 
+  text-decoration: underline; 
 }
+
