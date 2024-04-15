@@ -27,6 +27,20 @@ a {
   text-decoration: none; 
 }
 
+
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.scroll-item {
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+
 a:hover {
   color: #000435; 
   text-decoration: underline; 
