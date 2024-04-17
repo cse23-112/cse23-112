@@ -1,1 +1,33 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>
+TV Shows
+</title>
+<link href="Style.css" rel="stylesheet">
+</head>
+<body>
+<center>
+<h1>TV SHOWS</h2>
+</center>
+
+
+<h2>KIDS<h2>
+ <div class="scroll-container">
+    <img src="winx.jpg" width = 400" height = "200"  class="scroll-item">
+    <img src="pony.jpg" width = "400" height = "200"  class="scroll-item">
+<img src="spirit.jpg" width = "400" height = "200" class="scroll-item">
+         <img src="ALVIN.jpg" width = "400" height = "200" class="scroll-item">
+         <img src="powerpuff.jpg" width = "400" height = "200" class="scroll-item">
+    <img src="Barbie.jpg" width = "400" height = "200" class="scroll-item">
+         <img src="miraculousladybugandcatnoir.jpg" width = "400" height = "200" class="scroll-item">
+         <img src="thelandbeforetime.jpg" width = "400" height = "200" class="scroll-item">
+         <img src="mickeymouse.jpg" width = "400" height = "200" class="scroll-item">
+
+  </div>
+
+<h2>ACTION<h2>
+
+  </div>
+</body>
+</html>
