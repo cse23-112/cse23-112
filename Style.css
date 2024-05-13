@@ -1,3 +1,16 @@
+.custom-dropdown-btn {
+  background: url('path_to_your_image.png') no-repeat;
+  background-size: contain;
+  width: 40px; 
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-dropdown-menu {
+  min-width: 150px; 
+}
+
 body{ 
   background-color:#152238;
 }
