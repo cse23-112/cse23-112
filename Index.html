@@ -13,6 +13,41 @@
     </center>
  
     <link href="Style.css" rel="stylesheet">
+     <style>
+        .scroll-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%; /* Ensure the container takes full width */
+            overflow: hidden; /* Hide overflow to ensure smooth scrolling */
+        }
+        .scroll-content {
+            display: flex;
+            overflow-x: auto; /* Allow horizontal scrolling */
+            scroll-behavior: smooth;
+            width: calc(100% - 100px); /* Adjust width to accommodate buttons */
+        }
+        .movie-poster {
+            flex: 0 0 auto;
+            margin: 0 5px;
+        }
+        .scroll-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        #scroll-left {
+            position: absolute;
+            left: 0;
+        }
+        #scroll-right {
+            position: absolute;
+            right: 0;
+        }
+    </style>
  </head>
 
 
