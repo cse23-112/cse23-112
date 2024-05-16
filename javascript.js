@@ -1,19 +1,26 @@
-const scrollContainer = document.querySelector('.scroll-content');
-const scrollLeftButton = document.getElementById('scroll-left');
-const scrollRightButton = document.getElementById('scroll-right');
+document.addEventListener('DOMContentLoaded', (event) => {
+    const scrollContainers = [
+        { container: document.querySelectorAll('.scroll-content')[0], leftButton: document.getElementById('scroll-left'), rightButton: document.getElementById('scroll-right') },
+        { container: document.querySelectorAll('.scroll-content')[1], leftButton: document.getElementById('theater-scroll-left'), rightButton: document.getElementById('theater-scroll-right') }
+    ];
 
-const scrollAmount = 400; // Adjust this value based on the width of your images
+    const scrollAmount = 400; // Adjust this value based on the width of your images
 
-scrollLeftButton.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth'
-    });
-});
+    scrollContainers.forEach((scrollObj) => {
+        const { container, leftButton, rightButton } = scrollObj;
 
-scrollRightButton.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
+        leftButton.addEventListener('click', () => {
+            container.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        rightButton.addEventListener('click', () => {
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
     });
 });
