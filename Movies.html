@@ -1,48 +1,55 @@
+<!DOCTYPE html>
 <html>
-  
-  <head>
-    
-    <title>
-      MOVIES
-    </title>
-    
-   
+
+<head>
+    <title>MOVIES</title>
     <link href="Style.css" rel="stylesheet">
-  </head>
+</head>
 
-
-  
-  <body>
+<body>
     <h1>MOVIES</h1>
 
-    
-    <h2>BOLLYWOOD MOVIES<h2>
- <div class="scroll-container">
-    <img src="RRR.jpg" width = 400" height = "200"  class="scroll-item">
-    <img src="2states.jpg" width = "400" height = "200"  class="scroll-item">
-<img src="kasauti.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="salaar.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="kabir.jpg" width = "400" height = "200" class="scroll-item">
-    
-  </div>
-         <h2>TRENDING <h2>
- <div class="scroll-container">
-    <img src="NYSM.jpg" width = 400" height = "200"  class="scroll-item">
-    <img src="Grownups.jpg" width = "400" height = "200"  class="scroll-item">
-   <img src="Barbie.jpg" width = "400" height = "200" class="scroll-item">
-<img src="KARATE KID.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="Rebelmoon.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="charliesangels.jpg" width = "400" height = "200" class="scroll-item">
-    
-  </div>
-   <h2>MOVIE NIGHT COLLECTION<h2>
- <div class="scroll-container">
-    <img src="transformers.jpg" width = 400" height = "200"  class="scroll-item">
-    <img src="thedevilwearsprada.jpg" width = "400" height = "200"  class="scroll-item">
-<img src="to all the boys.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="the maze runner.jpg" width = "400" height = "200" class="scroll-item">
-         <img src="Batman.jpg" width = "400" height = "200" class="scroll-item">
-    
-  </div>
-  </body>
+    <h2>BOLLYWOOD MOVIES</h2>
+    <div class="scroll-container" id="bollywood-container">
+        <button class="scroll-button" id="bollywood-scroll-left">&lt;</button>
+        <div class="scroll-content">
+            <img src="RRR.jpg" width="400" height="200" class="scroll-item">
+            <img src="2states.jpg" width="400" height="200" class="scroll-item">
+            <img src="kasauti.jpg" width="400" height="200" class="scroll-item">
+            <img src="salaar.jpg" width="400" height="200" class="scroll-item">
+            <img src="kabir.jpg" width="400" height="200" class="scroll-item">
+        </div>
+        <button class="scroll-button" id="bollywood-scroll-right">&gt;</button>
+    </div>
+
+    <h2>TRENDING</h2>
+    <div class="scroll-container" id="trending-container">
+        <button class="scroll-button" id="trending-scroll-left">&lt;</button>
+        <div class="scroll-content">
+            <img src="NYSM.jpg" width="400" height="200" class="scroll-item">
+            <img src="Grownups.jpg" width="400" height="200" class="scroll-item">
+            <img src="Barbie.jpg" width="400" height="200" class="scroll-item">
+            <img src="KARATE KID.jpg" width="400" height="200" class="scroll-item">
+            <img src="Rebelmoon.jpg" width="400" height="200" class="scroll-item">
+            <img src="charliesangels.jpg" width="400" height="200" class="scroll-item">
+        </div>
+        <button class="scroll-button" id="trending-scroll-right">&gt;</button>
+    </div>
+
+    <h2>MOVIE NIGHT COLLECTION</h2>
+    <div class="scroll-container" id="collection-container">
+        <button class="scroll-button" id="collection-scroll-left">&lt;</button>
+        <div class="scroll-content">
+            <img src="transformers.jpg" width="400" height="200" class="scroll-item">
+            <img src="thedevilwearsprada.jpg" width="400" height="200" class="scroll-item">
+            <img src="to all the boys.jpg" width="400" height="200" class="scroll-item">
+            <img src="the maze runner.jpg" width="400" height="200" class="scroll-item">
+            <img src="Batman.jpg" width="400" height="200" class="scroll-item">
+        </div>
+        <button class="scroll-button" id="collection-scroll-right">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
