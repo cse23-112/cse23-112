@@ -183,7 +183,17 @@ form textarea{
     transition: all 0.3s ease;
   }
 
+
+
   form input:focus + i{
     color: #000000;
     transition: all 0.3s ease;
+  }
+
+  @media only screen and (max-width: 768px) {
+.moviePoster-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
   }
