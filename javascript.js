@@ -91,3 +91,69 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+// TV SHOWS JS
+
+document.addEventListener('DOMContentLoaded', () => {
+    const kidsContainer = document.getElementById('kids-container');
+    const kidsContent = kidsContainer.querySelector('.scroll-content');
+    const kidsScrollLeftButton = kidsContainer.querySelector('#kids-scroll-left');
+    const kidsScrollRightButton = kidsContainer.querySelector('#kids-scroll-right');
+
+    const favouritesContainer = document.getElementById('favourites-container');
+    const favouritesContent = favouritesContainer.querySelector('.scroll-content');
+    const favouritesScrollLeftButton = favouritesContainer.querySelector('#favourites-scroll-left');
+    const favouritesScrollRightButton = favouritesContainer.querySelector('#favourites-scroll-right');
+
+    const asianContainer = document.getElementById('asian-container');
+    const asianContent = asianContainer.querySelector('.scroll-content');
+    const asianScrollLeftButton = asianContainer.querySelector('#asian-scroll-left');
+    const asianScrollRightButton = asianContainer.querySelector('#asian-scroll-right');
+
+    const scrollAmount = 400; // Adjust this value based on the width of your images
+
+    kidsScrollLeftButton.addEventListener('click', () => {
+        kidsContent.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    kidsScrollRightButton.addEventListener('click', () => {
+        kidsContent.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    favouritesScrollLeftButton.addEventListener('click', () => {
+        favouritesContent.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    favouritesScrollRightButton.addEventListener('click', () => {
+        favouritesContent.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    asianScrollLeftButton.addEventListener('click', () => {
+        asianContent.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    asianScrollRightButton.addEventListener('click', () => {
+        asianContent.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
