@@ -14,16 +14,16 @@
  
     <link href="Style.css" rel="stylesheet">
      <style>
-        .scroll-container {
+       .scroll-container {
             display: flex;
             align-items: center;
             position: relative;
-            width: 100%; /* Ensure the container takes full width */
-            overflow: hidden; /* Hide overflow to ensure smooth scrolling */
+            width: 100%;
+            overflow: hidden;
         }
         .scroll-content {
             display: flex;
-            overflow-x: auto; /* Allow horizontal scrolling */
+            overflow-x: auto;
             scroll-behavior: smooth;
             width: calc(100% - 100px); /* Adjust width to accommodate buttons */
         }
@@ -39,11 +39,11 @@
             cursor: pointer;
             z-index: 1;
         }
-        #scroll-left {
+        #scroll-left, #theater-scroll-left {
             position: absolute;
             left: 0;
         }
-        #scroll-right {
+        #scroll-right, #theater-scroll-right {
             position: absolute;
             right: 0;
         }
