@@ -31,11 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // movies page js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const bollywoodContainer = document.getElementById('bollywood-container');
-    const bollywoodContent = bollywoodContainer.querySelector('.scroll-content');
-    const bollywoodScrollLeftButton = bollywoodContainer.querySelector('#bollywood-scroll-left');
-    const bollywoodScrollRightButton = bollywoodContainer.querySelector('#bollywood-scroll-right');
-
+    
     const trendingContainer = document.getElementById('trending-container');
     const trendingContent = trendingContainer.querySelector('.scroll-content');
     const trendingScrollLeftButton = trendingContainer.querySelector('#trending-scroll-left');
@@ -48,19 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const scrollAmount = 400; // Adjust this value based on the width of your images
 
-    bollywoodScrollLeftButton.addEventListener('click', () => {
-        bollywoodContent.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    bollywoodScrollRightButton.addEventListener('click', () => {
-        bollywoodContent.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
 
     trendingScrollLeftButton.addEventListener('click', () => {
         trendingContent.scrollBy({
@@ -106,11 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const favouritesScrollLeftButton = favouritesContainer.querySelector('#favourites-scroll-left');
     const favouritesScrollRightButton = favouritesContainer.querySelector('#favourites-scroll-right');
 
-    const asianContainer = document.getElementById('asian-container');
-    const asianContent = asianContainer.querySelector('.scroll-content');
-    const asianScrollLeftButton = asianContainer.querySelector('#asian-scroll-left');
-    const asianScrollRightButton = asianContainer.querySelector('#asian-scroll-right');
-
+   
     const scrollAmount = 400; // Adjust this value based on the width of your images
 
     kidsScrollLeftButton.addEventListener('click', () => {
@@ -141,19 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    asianScrollLeftButton.addEventListener('click', () => {
-        asianContent.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    asianScrollRightButton.addEventListener('click', () => {
-        asianContent.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
 });
 
 
