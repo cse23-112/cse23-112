@@ -12,6 +12,49 @@ h3{
 }
 p{color:white;}
 
+/* Style.css */
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add margin for spacing between sections */
+}
+
+.scroll-content {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: calc(100% - 100px); /* Adjust width to accommodate buttons */
+}
+
+.scroll-item {
+    width: 400px;
+    height: 200px;
+    margin-right: 10px; /* Add margin between posters */
+}
+
+.scroll-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button-left {
+    position: absolute;
+    left: 0;
+}
+
+.scroll-button-right {
+    position: absolute;
+    right: 0;
+}
+
 
 .navbar ul{
     list-style-type: none;
