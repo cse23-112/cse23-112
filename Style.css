@@ -110,7 +110,7 @@ a:hover {
   color: white;
 }
 
-container{
+.container{
   width: 360px;
   background: #000000;
   box-shadow: 0 0 8px rgba(250,250,250,0.6);
@@ -118,7 +118,7 @@ container{
 }
 
 .container form{
-  width: 360px;
+  width: 100%;
   text-align: center;
   padding: 25px 20px;
 }
