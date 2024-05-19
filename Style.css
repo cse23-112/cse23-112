@@ -109,6 +109,12 @@ a:hover {
   box-sizing: none;
   color: white;
 }
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 
 container{
   width: 360px;
@@ -118,7 +124,7 @@ container{
 }
 
 .container form{
-  width: 100%;
+  width: 360px;
   text-align: center;
   padding: 25px 20px;
 }
